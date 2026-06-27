@@ -1,0 +1,33 @@
+# Block any local files where you store API keys, tokens, or work aliases
+*.local
+*.secret
+*.env
+.env*
+
+# Never commit downloaded plugins (let your configs auto-install them on a new machine)
+.tmux/plugins/
+node_modules/
+.venv/
+venv/
+
+# Neovim cache, state, and downloaded package dependencies
+nvim/.local/
+nvim/.site/
+.local/share/nvim/
+.local/state/nvim/
+.config/nvim/.deps/
+
+# Shell history logs (huge security risk if committed!)
+.bash_history
+.zsh_history
+.lesshst
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Vim/Neovim swap, backup, and undo logs
+*.swp
+*.swo
+*~
+.netrwhist
