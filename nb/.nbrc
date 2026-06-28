@@ -17,13 +17,14 @@ export NB_COLOR_THEME="${NB_COLOR_THEME:-smoke}" # Set by `nb` • Sat 27 Jun 20
 
 export EDITOR="nvim" # Set by `nb` • Sat 27 Jun 2026 09:09:34 SAST
 
-
 export NB_DIR="${NB_DIR:-/home/podvig/Documents/notes}" # Set by `nb` • Sat 27 Jun 2026 09:11:56 SAST
 
 export NB_HEADER="${NB_HEADER:-2}" # Set by `nb` • Sat 27 Jun 2026 09:54:45 SAST
 
-export NB_MARKDOWN_TOOL="bat"
+export NB_MARKDOWN_TOOL="glow"
 
 export NB_DIRECTORY_TOOL="eza"
 
 export NB_SYNTAX_THEME="${NB_SYNTAX_THEME:-base16}" # Set by `nb` • Sat 27 Jun 2026 10:32:19 SAST
+
+export NB_SEARCH_TOOL="ripgrep"
