@@ -28,6 +28,14 @@ alias ll="eza -l --icons"
 alias la="eza -la --icons"
 alias tree="eza -lT -L 2"
 
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	command rm -f -- "$tmp"
+}
+
 # Rust Path
 . "$HOME/.cargo/env"
 
