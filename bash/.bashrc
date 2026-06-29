@@ -37,4 +37,3 @@ export PATH=$PATH:/usr/local/go/bin:~/go/bin
 #startup
 eval "$(starship init bash)"
 eval "$(zoxide init bash --cmd cd)"
-fastfetch --config /examples/13.jsonc
